@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>门店地址</title>
+    
+    <link rel="stylesheet" href="./css/address.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=YhUzP2sn9z1u2saZCpkR1dBUPZ8ULOfb">
+    </script>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+            <nav class="navbar navbar-reset navbar-static-top " data-spy="affix" data-offset-top="180" data-offset-bottom="200">
+                    <div class="container">
+                      <div class="navbar-header">
+                        <!-- 切换菜单 -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+                            <span class="sr-only">切换菜单</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        <!--  -->
+                        <a href="#" class="navbar-brand">
+                           <i class="icon-icon "></i>
+                           <i class="">MEGIC</i>
+                        </a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="nav_list">
+                      <ul class="nav navbar-nav">
+                        <li ><a href="./index.html">首页</a></li>
+                        <li ><a href="javascript:void(0)">音乐文摘</a></li>
+                        <li><a href="javascript:void(0)">名琴鉴赏</a></li>
+                        <li><a href="javascript:void(0)">提琴制作</a></li>
+                        <li><a href="javascript:void(0)">选购保养</a></li>
+                        <li><a href="./address.html" target="_blank">联系地址</a></li>      
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right hidden-sm">
+                        <li> <a href="">个人中心</a></li>
+                      </ul>
+                    </div>
+                    </div>
+                  </nav>
+                </header>
+    <!--map -->
+    <section id="map">
+                <div id="container">
+    
+                </div>
+    </section>
+    <section id="addre">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="javascript:void(0)" class="thumbnail">
+                        <img src="./img/M1.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="javascript:void(0)" class="thumbnail">
+                        <img src="./img/M2.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="javascript:void(0)" class="thumbnail">
+                        <img src="./img/M3.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="javascript:void(0)" class="thumbnail">
+                        <img src="./img/M4.jpg" alt="...">
+                    </a>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="text-center traffic">
+                        <span > 乘公交车:</span>
+                        <span> 12环行、17、39、51、434、654、723、运通202、107、803快
+                            刘家窑桥东到站，下车往芳群路走，大约50米就到天创公馆下的玛吉库提琴店。</span>
+                    </p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-center traffic">
+                           <span >乘地铁:</span> 
+                            <span>地铁5号线宋家庄方向，刘家窑站下车，从B口出来，
+                            往东走大约、5分钟到玛吉库提琴店。</span> 
+                    </p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-center  traffic">
+                            <span > 开 车:</span>
+                            <span> 从东三环过来的话，东铁营桥出口出来，顺附路向西行200多米
+                            公交车站旁有芳群路，向北20米即到玛吉库提琴店。（有停车位）</span>
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="col-xs-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">邮编100078 北京市丰台区南三环东路23号 天创公馆</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="text-center">电话(010)8767-xxxx / 传真(010)6765-xxxx / 手机133xxxxxxxx</p>
+                </div>
+                <div class="col-md-12">
+                  <p class="text-center">Copyright  &copy; Violino Magico Co.,Ltd</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+    <script src="./js/BDmap.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    
+
+
+
+</body>
+</html>

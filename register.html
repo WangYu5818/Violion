@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" href="./lib/bootstrap/css/bootstrapValidator.css" rel="stylesheet">
+    <link type="text/css" href="./lib/bootstrap/css/jquery.idcode.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/regist.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="./lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap/js/bootstrapValidator.js"></script>
+    <!-- <script type="text/javascript" src="./lib/bootstrap/js/getcode.js"></script> -->
+    <script type="text/javascript" src="./js/register.js"></script>
+
+</head>
+<style>
+
+</style>
+<body>
+
+    <!-- 头部 -->
+    <header id="header">
+    <nav class="navbar navbar-reset navbar-static-top " data-spy="affix" data-offset-top="180" data-offset-bottom="200">
+            <div class="container">
+              <div class="navbar-header">
+                <!-- 切换菜单 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+                    <span class="sr-only">切换菜单</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <!--  -->
+                <a href="#" class="navbar-brand">
+                   <i class="icon-icon "></i>
+                   <i class="">MEGIC</i>
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="nav_list">
+              <ul class="nav navbar-nav">
+                <li ><a href="./index.html">首页</a></li>
+                <li ><a href="javascript:void(0)">音乐文摘</a></li>
+                <li><a href="javascript:void(0)">名琴鉴赏</a></li>
+                <li><a href="javascript:void(0)">提琴制作</a></li>
+                <li><a href="javascript:void(0)">选购保养</a></li>
+                <li><a href="javascript:void(0)">最新动态</a></li>
+                <li><a href="./address.html" target="_blank">联系地址</a></li>      
+              </ul>
+              <ul class="nav navbar-nav navbar-right hidden-sm">
+                <li> <a href="">个人中心</a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+        </header>
+<!--  -->
+
+<section class="container">
+    <form action="" >
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="input-group" style="width:100%">
+                    <span class="input-group-addon" style="width:26%">用户名</span>
+                    <input type="text" class="form-control" id="cname" name="cname">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="input-group" style="width:100%">
+                    <span class="input-group-addon" style="width:26%">密码</span>
+                    <input type="password" class="form-control" id="cpwd" name="cpwd">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="input-group" style="width:100%">
+                    <span class="input-group-addon" style="width:26%">确认密码</span>
+                    <input type="password" class="form-control" id="checked_cpwd" name="checked_cpwd">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="input-group" style="width:100%">
+                    <span class="input-group-addon" style="width:26%;">手机号</span>
+                    <input type="text" class="form-control" placeholder="请输入11位手机号" id="phone" name="cphone">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="input-group ">
+                    <span class="input-group-addon" style="width:26%;">短信验证码</span>
+                    <input type="text" class="form-control" >
+                    <span class="input-group-addon yzm" id="getcode">获取验证码</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <a href="" style="color:#000">
+                    <input type="submit" class=" btn btn-warning " id="first" value="完成" style="margin-bottom:150px;margin-top:30px">
+                </a>
+            </div>
+        </div>
+    </form>
+</section>
+
+  <!-- 底部 -->
+  <footer id="footer" class="col-xs-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">邮编100078 北京市丰台区南三环东路23号 天创公馆</p>
+            </div>
+            <div class="col-md-12">
+                <p class="text-center">电话(010)8767-xxxx / 传真(010)6765-xxxx / 手机133xxxxxxxx</p>
+            </div>
+            <div class="col-md-12">
+              <p class="text-center">Copyright  &copy; Violino Magico Co.,Ltd</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  <!-- /底部 -->
+
+
+
+
+<script>
+    
+
+      // AJAX提交以及验证表单
+      $('#next').click(function(){
+        
+        var passwd = $('.passwd').val();
+        var passwd1 = $('.passwd1').val();
+       
+       //邮件正则
+       if(passwd == ''){
+          alert('请填写您的密码~');
+        }else if(passwd1 == ''){
+          alert('请再次输入您的密码~');
+        }else if(passwd != passwd1 || passwd1 != passwd){
+         alert('两次密码输入不一致呢~');
+        }else{
+        
+         $(".home_chongzhi_new").fadeOut(0);
+         $(".home_chongzhi_last").fadeIn(0);
+         $(".straight_back1").animate({width:"+=100px"},'fast');
+         $(".circle_back1").css("backgroundColor","black");
+          //此处省略 ajax 提交表单 代码...
+        }
+      });
+       
+
+</script>
+<script>
+$(function(){
+    $("#getcode").on('click',function(){
+       if($(this).html()=="获取验证码"){
+        var x = 6;
+        var timer1 = setInterval(function(){           
+            x-=1;
+            $("#getcode").html(x+"秒后重新发送！");
+            if(x==0){
+                clearInterval(timer1);
+                $("#getcode").html("获取验证码");
+            }
+        },1000)
+    }
+
+    })
+})
+</script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+</html>

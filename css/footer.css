@@ -1,0 +1,9 @@
+#footer{
+    height: 150px;
+    background-color: #555;
+    margin-top: 20px;
+    color: #ccc;
+  }
+  #footer .row>div:nth-child(1){
+    margin-top: 20px;
+  }

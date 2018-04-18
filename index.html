@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<!-- 设置字符编码 -->
+    <meta charset="utf-8">
+    <!-- 设置浏览器兼容版本，让IE使用最新的渲染引擎工作 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 声明当前网页在移动端浏览器中展示的相关设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>MAGIC</title>
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_572301_so731p7brgqzolxr.css"> -->
+
+  </head>
+  <body>
+<header id="header">
+  <div class="topbar visible-md visible-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 text-center">
+          <a href="javascript:avoid(0)" class="mobile-link">
+            <i class="icon-mobilephone"></i>
+            <span>扫码关注</span>
+            <i class="glyphicon glyphicon-chevron-down"></i>
+            <img src="./img/GZ.png" alt="扫一扫">
+          </a>
+        </div>
+        <div class="col-md-5  text-center">
+          <i class="icon-telephone" ></i> 
+          <span>营业时间：10:00--18:00</span>
+        </div>
+        <div class="col-md-2 text-center">
+          <a href="#">常用功能</a>
+        </div>
+        <div class="col-md-3 text-center">
+         <a href="./register.html" class="btn btn-reset btn-sm">立即注册</a>
+         <a href="#" class="btn btn-link btn-sm" data-toggle="modal" data-target="#login_form">登录</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 导航 -->
+  <nav class="navbar navbar-reset navbar-static-top " data-spy="affix" data-offset-top="180" data-offset-bottom="200">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- 切换菜单 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+            <span class="sr-only">切换菜单</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <!--  -->
+        <a href="#" class="navbar-brand">
+           <i class="icon-icon "></i>
+           <i class="">MEGIC</i>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav_list">
+      <ul class="nav navbar-nav">
+        <li ><a href="javascript:void(0)">音乐文摘</a></li>
+        <li><a href="javascript:void(0)">名琴鉴赏</a></li>
+        <li><a href="javascript:void(0)">提琴制作</a></li>
+        <li><a href="javascript:void(0)">选购保养</a></li>
+        <li><a href="javascript:void(0)">最新动态</a></li>
+        <li><a href="./address.html" target="_blank">联系地址</a></li>      
+      </ul>
+      <ul class="nav navbar-nav navbar-right hidden-sm">
+        <li> <a href="">个人中心</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+</header>
+
+<!-- 广告轮播 -->
+<section id="main_ad" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+      <li data-target="#main_ad" data-slide-to="1"></li>
+      <li data-target="#main_ad" data-slide-to="2"></li>
+    </ol>
+
+    <!-- 轮播项 -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" data-img-lg="./img/slide_01_2000x410.jpg" data-img-sm="./img/slide_01_640x340.jpg">  </div>
+        <div class="item " data-img-lg="./img/slide_02_2000x410.jpg" data-img-sm="./img/slide_02_640x340.jpg">  </div>
+        <div class="item " data-img-lg="./img/slide_03_2000x410.jpg" data-img-sm="./img/slide_03_640x340.jpg">  </div>
+        <!-- <div class="item " data-img-lg="./img/slide_04_2000x410.jpg" data-img-sm="./img/slide_04_640x340.jpg">  </div> -->
+    
+    </div>
+
+    <!-- 控制器 -->
+    <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  
+    </section>
+<!-- /广告轮播 -->
+<!--  -->
+    <section></section>
+    <!-- 特色介绍 -->
+    <section id="teSe">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+              <a href="#">
+                  <div class="media">
+                      <div class="media-left">
+                       <i class="icon-uniE907"></i>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">世界十大小提琴演奏家</h4>
+                        弗里茨·克莱斯勒、乔治·埃奈斯库、亚沙·海菲兹
+                      </div>
+                    </div>
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a href="#">
+                  <div class="media">
+                      <div class="media-left">
+                       <i class="icon-uniE907"></i>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">斯式琴和瓜式琴的不同</h4>
+                        斯氏与瓜氏无疑是历史上最伟大的两位制琴大师
+                      </div>
+                    </div>
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a href="#">
+                  <div class="media">
+                      <div class="media-left">
+                       <i class="icon-uniE907"></i>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">提琴的收藏与投资</h4>
+                        哪些小提琴值得收藏及投资
+                      </div>
+                    </div>
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a href="#">
+                  <div class="media">
+                      <div class="media-left">
+                       <i class="icon-uniE907"></i>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">小提琴的规格及样式</h4>
+                        小提琴的尺寸有4／4,3／4,1／2,1／4,1／8,1／16几种规格
+                      </div>
+                    </div>
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a href="#">
+                  <div class="media">
+                      <div class="media-left">
+                       <i class="icon-uniE907"></i>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">小提琴的维修与保养</h4>
+                        让乐器保持在最佳状况是非常重要的
+                      </div>
+                    </div>
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <a href="#">
+                  <div class="media">
+                      <div class="media-left">
+                       <i class="icon-uniE907"></i>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">提琴配件</h4>
+                        选择合适的配件会使琴声更加优美
+                      </div>
+                    </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /特色介绍 -->
+    
+    <!-- 立即预约 -->
+    <section id="yuyue">
+      <div class="container">
+          <p class="pull-left"> <i class="icon-uniE906"></i> 已有 <span>558</span> 人预约，累计预约 <span>888</span> 次。 <a href="">预约到店</a> </p>
+          <p class="pull-right hidden-sm hidden-xs"> <i class="icon-uniE905"></i>  <a href="./address.html">门店地址</a></p>
+        </div>
+    </section>
+    <!-- /立即预约 -->
+    
+    <!-- 选项卡 -->
+    <section id="products">
+      <div class="container">
+        <!-- 给ul加一个容器，这个容器有横向滚动条
+          动态设置ul的宽度
+        -->
+        <div class="ul-wapper">
+            <!-- 选项卡标题 -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab">国内小提琴家</a></li>
+              <li role="presentation"><a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab">国外小提琴家</a></li>
+              <li role="presentation"><a href="#tab_3" aria-controls="tab_3" role="tab" data-toggle="tab">弦乐器收藏</a></li>
+              <li role="presentation"><a href="#tab_4" aria-controls="tab_4" role="tab" data-toggle="tab">琴弓</a></li>
+            </ul>
+          </div>
+          
+            <!-- 选项卡内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active fade in" id="tab_1">
+                 <div class="row">
+                   <div class=" clo-xs-12 col-sm-6 col-md-4">
+                      <div class="panel panel-color actived">
+                          <div class="panel-heading">
+                            <img src="./img/1.jpg" alt="盛中国">
+                          </div>
+                          <div class="panel-body">
+                            <h4>盛中国</h4>
+                             <div class="row">
+                               <div class="col-lg-12">
+                                 <p>盛中国对作品的理解和处理有独到之处；演奏风格既热情奔放，又甜美细腻，富于诗情画意、浪漫幻想。</p>
+                               </div>
+                              
+                             </div>
+                          </div>
+                        </div>
+                   </div>
+                   <div class=" clo-xs-12 col-sm-6 col-md-4">
+                      <div class="panel panel-color disabled">
+                          <div class="panel-heading">
+                              <img src="./img/2.jpg" alt="盛中国">
+                            </div>
+                            <div class="panel-body">
+                              <h4>吕思清</h4>
+                               <div class="row">
+                                 <div class="col-lg-12">
+                                   <p>第34届意大利帕格尼尼国际小提琴大赛金奖。代表作品 梁祝、流浪者之歌</p>
+                                 </div>
+                                
+                               </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class=" clo-xs-12 col-sm-6 col-md-4">
+                      <div class="panel panel-color">
+                          <div class="panel-heading">
+                              <img src="./img/3.jpg" alt="盛中国">
+                            </div>
+                            <div class="panel-body">
+                              <h4>黄蒙拉</h4>
+                               <div class="row">
+                                 <div class="col-lg-12">
+                                   <p>荣获第49届帕格尼尼国际小提琴大赛金奖，被誉为“东方的帕格尼尼”</p>
+                                 </div>
+                                
+                               </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class=" clo-xs-12 col-sm-6 col-md-4">
+                      <div class="panel panel-color">
+                          <div class="panel-heading">
+                              <img src="./img/4.jpg" alt="盛中国">
+                            </div>
+                            <div class="panel-body">
+                              <h4>李传韵</h4>
+                               <div class="row">
+                                 <div class="col-lg-12">
+                                   <p>有“小提琴王国中的鬼才”之称的李传韵，是国际知名的年轻一代的中国演奏家，被誉为中国最年轻的小提琴国际大师</p>
+                                 </div>
+                                
+                               </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class=" clo-xs-12 col-sm-6 col-md-4">
+                      <div class="panel panel-color">
+                          <div class="panel-heading">
+                              <img src="./img/5.jpg" alt="盛中国">
+                            </div>
+                            <div class="panel-body">
+                              <h4>薛伟</h4>
+                               <div class="row">
+                                 <div class="col-lg-12">
+                                   <p>是世界著名小提琴演奏家，曾赢取柴可夫斯基小提琴大赛银奖，创下有史以来中国人在世界音乐大赛中最高最多奖项</p>
+                                 </div>
+                                
+                               </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class=" clo-xs-12 col-sm-6 col-md-4">
+                      <div class="panel panel-color">
+                          <div class="panel-heading">
+                              <img src="./img/6.jpg" alt="盛中国">
+                            </div>
+                            <div class="panel-body">
+                              <h4>唐韵</h4>
+                               <div class="row">
+                                 <div class="col-lg-12">
+                                   <p>著名青年小提琴演奏家。师从小提琴教育专家林耀基、世界著名小提琴教育家罗伯特利普塞特</p>
+                                 </div>
+                                
+                               </div>
+                            </div>
+                        </div>
+                   </div>
+                 </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="tab_2">
+                  <div class="row">
+                      <div class=" clo-xs-12 col-sm-6 col-md-4">
+                         <div class="panel panel-color actived">
+                             <div class="panel-heading">
+                               <img src="./img/2-1.jpg" alt="盛中国">
+                             </div>
+                             <div class="panel-body">
+                               <h4>尼科罗·帕格尼尼</h4>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <p>意大利小提琴大师、作曲家,在他的《二十四首随想曲》中，显示出惊人的才华，表现了高超的技巧。</p>
+                                  </div>
+                                 
+                                </div>
+                             </div>
+                           </div>
+                      </div>
+                      <div class=" clo-xs-12 col-sm-6 col-md-4">
+                         <div class="panel panel-color disabled">
+                             <div class="panel-heading">
+                                 <img src="./img/2-2.jpg" alt="盛中国">
+                               </div>
+                               <div class="panel-body">
+                                 <h4>亚沙·海菲兹</h4>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <p>二十世纪杰出的美籍立陶宛小提琴家,30年代中期后，其演奏水平登峰造极</p>
+                                    </div>
+                                   
+                                  </div>
+                               </div>
+                           </div>
+                      </div>
+                      <div class=" clo-xs-12 col-sm-6 col-md-4">
+                         <div class="panel panel-color">
+                             <div class="panel-heading">
+                                 <img src="./img/2-3.jpg" alt="盛中国">
+                               </div>
+                               <div class="panel-body">
+                                 <h4>耶胡迪·梅纽因</h4>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <p>耶胡迪·梅纽因,美国小提琴家，犹太人。他的演奏具有辉煌的技巧、独特的气质和动人的魅力。</p>
+                                    </div>
+                                   
+                                  </div>
+                               </div>
+                           </div>
+                      </div>
+                      <div class=" clo-xs-12 col-sm-6 col-md-4">
+                         <div class="panel panel-color">
+                             <div class="panel-heading">
+                                 <img src="./img/2-4.jpg" alt="盛中国">
+                               </div>
+                               <div class="panel-body">
+                                 <h4>伊扎克·帕尔曼</h4>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <p>以色列著名小提琴家,4岁时因患小儿麻痹症成为终身残疾。自幼表现出酷爱音乐的天性</p>
+                                    </div>
+                                   
+                                  </div>
+                               </div>
+                           </div>
+                      </div>
+                      <div class=" clo-xs-12 col-sm-6 col-md-4">
+                         <div class="panel panel-color">
+                             <div class="panel-heading">
+                                 <img src="./img/2-5.jpg" alt="盛中国">
+                               </div>
+                               <div class="panel-body">
+                                 <h4>弗里茨·克莱斯勒</h4>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <p>美籍奥地利小提琴家、作曲家,童年时代便显示出音乐天才，早期受到良好的音乐教育，曾在维也纳音乐院、巴黎音乐学院学习</p>
+                                    </div>
+                                   
+                                  </div>
+                               </div>
+                           </div>
+                      </div>
+                      <div class=" clo-xs-12 col-sm-6 col-md-4">
+                         <div class="panel panel-color">
+                             <div class="panel-heading">
+                                 <img src="./img/2-6.jpg" alt="盛中国">
+                               </div>
+                               <div class="panel-body">
+                                 <h4>大卫·葛瑞特</h4>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <p>德国—美国混血的音乐神童，师承梅纽因及帕尔曼等小提琴巨擘,精准演奏完《野蜂飞舞》，打破了吉尼斯世界纪录</p>
+                                    </div>
+                                   
+                                  </div>
+                               </div>
+                           </div>
+                      </div>
+                    </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="tab_3">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="media" style="padding:10px 10px;">
+                      <div class="media-left media-middle">
+                        <a href="javascript:void(0)">
+                          <img class="media-object" style="width:100px;height:100px;" src="./img/media1.jpg" alt="media1">
+                        </a>
+                      </div>
+                      <div class="media-body" style="text-indent:2rem">
+                          弦乐器，在欧洲它不仅仅作为演奏音乐的乐器，而是如同绘画、雕刻作品一样，是有价值的艺术品。 因此，在过去几百年间，欧洲的贵族、收藏家们都珍藏有弦乐器。从古董级作品到各个时代一流制作家的新作品都可作为收藏。这些作品不仅可以升值， 而且作为室内的装饰品，和绘画、雕刻作品一样带给人们美的享受。弦乐器收藏家不一定都得会演奏乐器，收藏艺术品会给收藏家的生活增添无穷的乐趣。 也有不少收藏家由于收藏乐器，从此又有了学习、演奏乐器的爱好，收藏与演奏成为双重爱好， 既能获得拥有世界级艺术品的喜悦，也可以通过演奏获得艺术上的享受
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="media" style="padding:10px 10px;">
+                        <div class="media-left media-middle">
+                          <a href="javascript:void(0)">
+                            <img class="media-object" style="width:100px;height:100px;" src="./img/media2.jpg" alt="media1">
+                          </a>
+                        </div>
+                        <div class="media-body" style="text-indent:2rem">
+                            在海外，小提琴不仅仅是一种演奏用的乐器，还是有着丰富内涵的艺术品。一流的制作家花费数月工夫亲手制作出的作品，
+                            已经不单单是乐器了，它大部分的价值是和绘画、雕刻作品一样的，也可以说是国际通用的艺术品。
+                            过去 ，显赫的家族把弦乐器作为传家之宝来装饰。
+当然演奏这些传家宝是一种乐趣，更重要的是把拥有弦乐器作为家族富有的象征，并证明自身的实力， 拥有这样的艺术品意味着不仅在物质上富裕，同时显示着对文化艺术（音乐）的热爱。因此，我们建议拥有当今意大利新作品也值得的。
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="tab_4">
+                <div class="row">
+                  <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <tr>
+                      <th>品牌</th>
+                      <th>价格(元)</th>
+                      <th>制作地</th>
+                      <th>Memo</th>
+                    </tr>
+                    <tr>
+                      <td>Le Bois Magique</td>
+                      <td>1200</td>
+                      <td>中国</td>
+                      <td>新作 MAGICO 原创</td>
+                    </tr>
+                    <tr>
+                      <td>Arcos</td>
+                      <td>2,000</td>
+                      <td>中国</td>
+                      <td>新作 MAGICO 监制</td>
+                    </tr>
+                    <tr>
+                      <td>Ouchard Emile Auguste</td>
+                      <td>call</td>
+                      <td>France</td>
+                      <td>带鉴定书　J.F.Raffin
+                          "名贵钻石和红宝石装饰
+                          附有钻石和红宝石的鉴定书"
+                          Gold-Diamond</td>
+                    </tr>
+                    <tr>
+                      <td>Tubbs James</td>
+                      <td>call</td>
+                      <td>England</td>
+                      <td>带鉴定书
+                          J.F.Raffin
+                          1894年特殊定制名弓,雕刻</td>
+                    </tr>
+                    <tr>
+                      <td>Giorgio Grisales</td>
+                      <td>call</td>
+                      <td>Italy</td>
+                      <td>新作</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="tab_5"></div>
+            </div>
+          
+          </div>
+    </section>
+    <!-- /选项卡 -->
+    <!-- 新闻列表 -->
+
+<section id="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-md-offset-3">
+        <div class="news-title">
+          在线教学
+        </div>
+      </div>
+      <div class="col-md-1 ">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active">
+            <a href="#news0" data-title="在线教学" data-toggle="tab" role="tab">
+              <i class="icon-news0"></i>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#news1" data-title="音乐新闻" data-toggle="tab" role="tab">
+              <i class="icon-news1"></i>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#news2" data-title="热门乐曲" data-toggle="tab" role="tab">
+              <i class="icon-news2"></i>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#news3" data-title="制琴大师" data-toggle="tab" role="tab">
+              <i class="icon-news3"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 ">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active fade in" id="news0">
+            <div class="row">
+              <a href="">《沃尔法特小提琴教程》第46课讲解 赵薇教授</a>
+            </div>
+            <div class="row">
+              <a href=""> [伴奏录音]德沃夏克:幽默曲</a>
+            </div>
+            <div class="row">
+              <a href="">
+                [考级伴奏录音]陈钢：金色的炉台
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                [考级伴奏录音]马耀先：新疆之春
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                [考级伴奏录音]秦咏诚：海滨音诗
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                [考级示范录音]巴赫：布列舞曲
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                [考级伴奏录音]巴赫：小步舞曲
+              </a>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="news1">
+            <div class="row">
+              <a href=""> 四川音乐学院乐团【2015秋冬音乐季】㈣歌剧之夜</a>
+            </div>
+            <div class="row">
+              <a href="">听宁峰在西安音乐学院的小提琴独奏音乐会</a>
+            </div>
+            <div class="row">
+              <a href="">
+                十四届梅纽因国际小提琴比赛举行 华人选手夺魁
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                盛中国：这个名字对我是鞭策
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                朗朗称上海交响乐团音乐厅音效可排世界前三
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                小泽征尔剪不断的中国情
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                上海艾萨克·斯特恩国际小提琴赛决赛 新闻
+              </a>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="news2">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" style="width:50px;height:50px;" src="./img/music.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body center">
+                《巴赫无伴奏》
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" style="width:50px;height:50px;" src="./img/music2.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body center">
+                《查尔达什舞曲》
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" style="width:50px;height:50px;" src="./img/music3.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body center">
+                《G弦上的咏叹调》
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" style="width:50px;height:50px;" src="./img/music4.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body center">
+                《a小调协奏曲 第一乐章》
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="news3">
+
+            <div class="media ">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object Conia" src="./img/Conia.jpg" alt="Conia">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading ">Stefano Conia</h4>
+                <p class="ti">
+                  北京玛吉库也是库尼亚大师（Stefano Conia）作品的中国总代理店。 众多的提琴制作家都以达到库尼亚大师的制作水准为目标。 作为弦乐器店，能够介绍现代大师库尼亚的作品是件非常幸福的事。 此次，由库尼亚本人认定北京玛吉库为中国的S.Conia作品总代理店这件事使我们既惊喜又感到责任重大。
+                您可以体验库尼亚大师作品的力量与音响，这种力量与音响在音乐会上能发挥充分的威力 您还可以体验一下没有杂音而透明的音色，这种音色只有用成熟的素材制作的作品才能发出。</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+        <!-- /新闻列表 -->
+
+
+        <!-- parter -->
+        <section id="parter">
+          <div class="container text-center " >
+              <h3 >合作伙伴</h3>
+              <ul class="" >
+                <li class="co-md-4"><a href="javascript:void(0)"> <i class="icon-uniE930"></i> </a></li>
+                <li class="co-md-4"><a href="javascript:void(0)"> <i class="icon-uniE92C"></i> </a></li>
+                <li class="co-md-4"><a href="javascript:void(0)"> <i class="icon-uniE92B"></i> </a></li>
+                <li class="co-md-4"><a href="javascript:void(0)"> <i class="icon-uniE92D"></i> </a></li>
+              </ul>
+          </div>
+        </section>
+        <!-- /parter -->
+        <div class="clearfix"></div>
+        <!-- footer -->
+    <footer id="footer" class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <p class="text-center">邮编100078 北京市丰台区南三环东路23号 天创公馆</p>
+          </div>
+          <div class="col-md-12">
+              <p class="text-center">电话(010)8767-xxxx / 传真(010)6765-xxxx / 手机133xxxxxxxx</p>
+          </div>
+          <div class="col-md-12">
+            <p class="text-center">Copyright  &copy; Violino Magico Co.,Ltd</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+        <!-- /footer -->
+
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="login_form_title">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">如果没有账号请 <a href="">注册</a> </h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">账号：</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入账号">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">密码：</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                    </div>
+                    
+                   
+                    <button type="submit" class="btn btn-default">登录</button>
+                  </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- backToTop -->
+      <div id="top"><a href="#header">TOP</a> </div>
+      <!-- 分享 -->
+
+
+      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="./js/share.js"> </script>
+    <div class="container"></div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
